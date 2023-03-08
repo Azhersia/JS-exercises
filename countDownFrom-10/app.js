@@ -1,12 +1,17 @@
-let seconds = 10
-document.querySelector('#number').innerText = seconds
+// declare variables
+let timeLeft = 10
+const timeEl = document.querySelector('#number')
 
-setTimeout(counter, 500);
+// set interval
+let timer = setInterval(function timeCount() {
+  // current time - 1
+  timeLeft -= 1;
+  // time inner text replaced with current time
+  timeEl.innerText = timeLeft
 
-function counter() {
-  seconds = seconds - 1
-}
-
-for (let i = 0; i < 10; i++) {
-
-}
+  // if time is 0 or less than 0 remove interval set text to "hello!"
+  if (timeLeft <= 0) {
+    clearInterval(timer)
+    timeEl.innerText = 'Hello!'
+  }
+}, 1000)
