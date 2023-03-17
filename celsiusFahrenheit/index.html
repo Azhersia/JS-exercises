@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cels || Fahren</title>
+</head>
+
+<body>
+  <h1>From</h1>
+
+  <select id="list1" onchange="getSelectValues();">
+    <option class="temp" value="fromCels">celcius</option>
+    <option class="temp" value="fromFahr">fahrenheit</option>
+  </select>
+  <input type="text" id="tempInput">
+  <h1>To</h1>
+  <select id="list2" onchange="getSelectValues();">
+    <option class="temp" value="toCels">celcius</option>
+    <option class="temp" value="toFahr">fahrenheit</option>
+  </select>
+  <p class="result"></p>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

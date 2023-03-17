@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #aecad1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.result,
+input {
+  min-width: 100px;
+  height: 20px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid black;
+  padding: 3px 3px;
+}
+
+input {
+  width: 100px;
+}
+
+.result {
+  user-select: none;
+}
