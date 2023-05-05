@@ -10,19 +10,19 @@
 </head>
 
 <body>
-  <h1>From</h1>
 
-  <select id="list1" onchange="getSelectValues();">
-    <option class="temp" value="fromCels">celcius</option>
-    <option class="temp" value="fromFahr">fahrenheit</option>
-  </select>
-  <input type="text" id="tempInput">
-  <h1>To</h1>
-  <select id="list2" onchange="getSelectValues();">
-    <option class="temp" value="toCels">celcius</option>
-    <option class="temp" value="toFahr">fahrenheit</option>
-  </select>
-  <p class="result"></p>
+  <h1> Celcius and Fahrenheit</h1>
+  <input class="input" type="text" placeholder="Your temperature">
+  <div>
+    <input id="cels" type="radio" name="unit">
+    <label for="cels">Celsius</label>
+    <input id="fahren" type="radio" name="unit">
+    <label for="fahren">Fahrenheit</label>
+  </div>
+
+  <h1 class="temp"></h1>
+
+  <button onclick="convert()">Convert</button>
 
   <script src="app.js"></script>
 </body>
