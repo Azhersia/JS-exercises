@@ -4,7 +4,7 @@ const divElement = document.querySelector('div');
 inputElement.addEventListener('change', () => {
   const result = computeAge(inputElement.value);
   divElement.innerHTML = `
-    Du är ${result.years} år och ${result.days} dagar gammal
+    You are ${result.years} years and ${result.days} days old.
   `;
 });
 
